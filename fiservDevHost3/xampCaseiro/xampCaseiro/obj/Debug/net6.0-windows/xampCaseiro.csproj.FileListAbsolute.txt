@@ -1,0 +1,34 @@
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\bin\Debug\net6.0-windows\xampCaseiro.exe
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\bin\Debug\net6.0-windows\xampCaseiro.deps.json
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\bin\Debug\net6.0-windows\xampCaseiro.runtimeconfig.json
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\bin\Debug\net6.0-windows\xampCaseiro.dll
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\bin\Debug\net6.0-windows\xampCaseiro.pdb
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.Form1.resources
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.Properties.Resources.resources
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.csproj.GenerateResource.cache
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.AssemblyInfoInputs.cache
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.AssemblyInfo.cs
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.csproj.CoreCompileInputs.cache
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.dll
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\refint\xampCaseiro.dll
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.pdb
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.genruntimeconfig.cache
+C:\Users\Vitonis\projetos\xampcaseiro\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\ref\xampCaseiro.dll
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\bin\Debug\net6.0-windows\xampCaseiro.exe
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\bin\Debug\net6.0-windows\xampCaseiro.deps.json
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\bin\Debug\net6.0-windows\xampCaseiro.runtimeconfig.json
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\bin\Debug\net6.0-windows\xampCaseiro.dll
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\bin\Debug\net6.0-windows\xampCaseiro.pdb
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.Form1.resources
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.Properties.Resources.resources
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.csproj.GenerateResource.cache
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.AssemblyInfoInputs.cache
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.AssemblyInfo.cs
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.csproj.CoreCompileInputs.cache
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.dll
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\refint\xampCaseiro.dll
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.pdb
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\xampCaseiro.genruntimeconfig.cache
+C:\Users\Vitonis\projetos\xampcaseiro - Copia (3)\xampCaseiro\xampCaseiro\obj\Debug\net6.0-windows\ref\xampCaseiro.dll
