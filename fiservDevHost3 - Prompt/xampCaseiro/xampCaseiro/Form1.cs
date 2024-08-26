@@ -41,7 +41,7 @@ namespace xampCaseiro
             //  }
             // return false;
 
-            var processName = Path.GetFileNameWithoutExtension(path);
+                 var processName = Path.GetFileNameWithoutExtension(path);
             foreach (var process in Process.GetProcessesByName(processName))
             {
                 // Verificar se MainModule e FileName não são nulos
@@ -70,7 +70,7 @@ namespace xampCaseiro
             UpdateServiceStatus();
         }
 
-        private void btnStartMySQL_Click(object sender, EventArgs e)
+        private async void btnStartMySQL_Click(object sender, EventArgs e)
         {
             string mysqlPath = txtMySQLPath.Text;
 
@@ -81,13 +81,14 @@ namespace xampCaseiro
             }
 
             string mysqlDirectory = System.IO.Path.GetDirectoryName(mysqlPath);
-            StartProcessMysql(mysqlDirectory, "mysqld --console");
+            //StartProcessMysql(mysqlDirectory, "mysqld --console");
+            await Task.Run(() => StartProcessMysql(mysqlDirectory, "mysqld --console"));
             UpdateServiceStatus();
         }
 
         private void btnStopMySQL_Click(object sender, EventArgs e)
         {
-            StopProcessMysql();
+            StopProcess("mysqld");
             UpdateServiceStatus();
         }
 
@@ -148,7 +149,76 @@ namespace xampCaseiro
             }
         }
 
-        private void StartProcessMysql(string workingDirectory, string command)
+        private async Task StartProcessMysqlAsync(string workingDirectory, string fileName, string arguments)
+        {
+            try
+            {
+                var processStartInfo = new ProcessStartInfo
+                {
+                    WorkingDirectory = workingDirectory,
+                    FileName = "cmd.exe",
+                    Arguments = $"/C {fileName} {arguments}",
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+
+                using (var process = new Process { StartInfo = processStartInfo })
+                {
+                    process.OutputDataReceived += (sender, e) =>
+                    {
+                        if (!string.IsNullOrEmpty(e.Data))
+                        {
+                            Console.WriteLine(e.Data); // Ou salve em um log, ou atualize a interface gráfica
+                        }
+                    };
+
+                    process.ErrorDataReceived += (sender, e) =>
+                    {
+                        if (!string.IsNullOrEmpty(e.Data))
+                        {
+                            Console.WriteLine($"Erro: {e.Data}"); // Lidar com erros
+                        }
+                    };
+
+                    process.Start();
+                    process.BeginOutputReadLine();
+                    process.BeginErrorReadLine();
+
+                    await Task.Run(() => process.WaitForExit());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao iniciar o MySQL: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void StartProcessMysql(string workingDirectory, string arguments)
+        {
+            try
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo
+                {
+                    FileName = "cmd.exe",
+                    Arguments = $"/K cd /d \"{workingDirectory}\" && {arguments}",
+                    UseShellExecute = false,
+                    CreateNoWindow = false
+                };
+
+                using (Process process = Process.Start(startInfo))
+                {
+                    process.WaitForExit();  // Espera o CMD fechar, mas sem travar a UI.
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao iniciar MySQL via CMD: {ex.Message}");
+            }
+        }
+
+        private void StartProcessMysql_OLDS(string workingDirectory, string command)
         {
             ProcessStartInfo startInfo = new ProcessStartInfo
             {
@@ -201,6 +271,20 @@ namespace xampCaseiro
             }
         }
 
+        private async void btnStartMySQL_ClickAsync(object sender, EventArgs e)
+        {
+            string mysqlPath = txtMySQLPath.Text;
+
+            if (string.IsNullOrEmpty(mysqlPath) || !System.IO.File.Exists(mysqlPath))
+            {
+                MessageBox.Show("O caminho do MySQL não é válido. Verifique e tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string mysqlDirectory = System.IO.Path.GetDirectoryName(mysqlPath);
+            await StartProcessMysqlAsync(mysqlDirectory, "mysqld", " --console");
+            UpdateServiceStatus();
+        }
 
 
         private void btnOpenPHPConfig_Click(object sender, EventArgs e)

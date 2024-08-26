@@ -269,7 +269,7 @@
             ConfigMysqlBtn.TabIndex = 20;
             ConfigMysqlBtn.Text = "Config Mysql";
             ConfigMysqlBtn.UseVisualStyleBackColor = true;
-            ConfigMysqlBtn.Click += btnOpenMysqlConfig_Click;
+            ConfigMysqlBtn.Click += btnStartMySQL_ClickAsync;
             // 
             // btnSavePaths
             // 
